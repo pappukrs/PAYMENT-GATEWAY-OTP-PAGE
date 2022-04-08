@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP PAGE</title>
+    <style>
+    h1{
+        text-align: center;
+        font-size:40px;
+    }
+   form{
+       margin-top:20px;
+       margin-left:400px;
+       margin-right:300px;
+       background-color: teal;
+       font-size:30px;
+       padding:50px;
+   }
+
+    </style>
+</head>
+<body>
+    <h1>PLEASE ENTER OTP that Sent to your registered mobile</h1>
+    <form>
+        <input type="number" placeholder="OTP" id="otp"/>
+        <input type="submit" value="COMPLETED"/>
+    </form>
+</body>
+<script>
+document.querySelector("form").addEventListener("submit", function(){
+   event.preventDefault();
+   var enteredOTP=document.querySelector("#otp").value;
+    
+   if(enteredOTP==="1234"){
+       alert("PAYMENT SUCCESSFUL");
+   }
+   else{
+       alert("Enter correct otp");
+   }
+
+});
+</script>
+
+</html>
